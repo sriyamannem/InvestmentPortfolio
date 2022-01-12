@@ -1,0 +1,121 @@
+(1)  the general  problem  you  are  trying  to  solve  
+helping people track their investments using this program
+
+(2)  what  are  the  assumptions  and  limitations  of  your solution 
+updating the the price of investment has to be done manually not automatically 
+
+(3) how can a user build and test your program (also called the user guide)
+first an investment must be bought and the user can sell it, update it's price, find his/her gain or loss buy get gain and find specific investments using search 
+
+(4) how is the program tested for correctness (i.e., the test plan should be part of the README file) 
+
+-command menu should take you to the correct interfaces 
+-all reset buttons should clear all txtfield and boxes
+
+ -for buy button
+ input for type: stock
+ input for symbol: hi
+ input for name: hello
+ input for quantity: 90
+ input for price: 8
+ output in messages: "Investment successfully bought!"
+
+ input for type: mutal funs
+ input for symbol: hi
+ input for name: hello
+ input for quantity: 90
+ input for price: -9
+ output in messages: "Invalid input try again"
+
+ -for sell button
+ input for symbol: hi
+ input for quantity:8
+ input for price: 8
+ output in messages: "Investment successfully sold!" 
+
+ input for symbol: hi
+ input for quantity:100
+ input for price: 8
+ output in messages: "Either Stock does not exist or avaliable quanity is lower than requested quantity."
+
+ input for symbol: hi
+ input for quantity: -9
+ input for price: -8
+ output in messages: "Not a valid entry" 
+
+ -for update
+ previous and next button should be disabled repesctivly if no previous or next investment in list
+
+ input for price: 8
+ output in messages: "Investment (name of investment) succuessflly updated)"
+
+ input for price: -8
+ output in messages: "Not a valid entry" 
+
+ -for total gain 
+
+ if the following input was added to buy:
+
+ input for type: stock
+ input for symbol: hi
+ input for name: hello
+ input for quantity: 90
+ input for price: 8
+
+ input for type: stock
+ input for symbol: ko
+ input for name: hello u
+ input for quantity: 97
+ input for price: 8
+
+ input for type: mutalfund
+ input for symbol: kk
+ input for name: hello
+ input for quantity: 9
+ input for price: 8
+
+ then total gain is: -54.94
+
+ -for search 
+
+ if the following input was added to buy:
+
+ input for type: stock
+ input for symbol: hi
+ input for name: hello
+ input for quantity: 90
+ input for price: 8
+
+ input for type: stock
+ input for symbol: ko
+ input for name: hello u
+ input for quantity: 97
+ input for price: 8
+
+ input for type: mutalfund
+ input for symbol: kk
+ input for name: hello
+ input for quantity: 9
+ input for price: 8
+
+if the following was inputed for search
+
+ input symbol:hi 
+ input keywords: hello
+ input low price:9
+ input high price:78
+
+ output in messages:
+
+ output for search for symbol: only the first investment in list will pop up
+ output for search for keywords: first and second investment will show up 
+ output for search price: nothing
+
+ if high price is lower than low price and vice versus error message will pop up in messages
+ 
+
+(5) what  possible  improvements  could  be  done  if  you  were  to  do  it  again  or  have  extra  time available
+fix the hash search
+
+(6)How does the program  complied and run? 
+Once in correct directory the command line input "javac Portfolio.java" is used to complie the program and to run it's "java Portfolio". 
